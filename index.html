@@ -219,15 +219,16 @@
     }
     .step-num {
       font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 900;
       color: var(--target-red);
       letter-spacing: 0.04em;
       flex-shrink: 0;
-      min-width: 24px;
+      min-width: 26px;
     }
     .step-text {
-      font-size: 13.5px;
+      font-size: 16px;
+      font-weight: 700;
       color: var(--dark);
       line-height: 1.4;
     }
@@ -304,7 +305,7 @@
     <div class="toast-icon">&#127873;</div>
     <div class="toast-body">
       <div class="toast-badge">&#128293; JUST CLAIMED <span>$750</span></div>
-      <p class="toast-text" id="toast-text"><strong>Joseph D.</strong> redeemed <strong>$750</strong> coupon!</p>
+      <p class="toast-text" id="toast-text"><strong>Joseph D.</strong> redeemed <strong>$750</strong> Target coupon!</p>
       <div class="toast-meta">just now &nbsp;&bull;&nbsp; coupon active</div>
     </div>
   </div>
@@ -332,7 +333,7 @@
 
     <!-- Headline -->
     <h1 class="headline">
-      Get a <span class="amount">$750</span>  Target <br>Discount Today
+      Get a <span class="amount">$750</span> Target<br>Discount Today
     </h1>
 
 
@@ -386,7 +387,7 @@
   function showToast() {
     var name = names[idx % names.length];
     idx++;
-    toastTxt.innerHTML = '<strong>' + name + '</strong> redeemed <strong>$750</strong> coupon!';
+    toastTxt.innerHTML = '<strong>' + name + '</strong> redeemed <strong>$750</strong> Target coupon!';
     toast.classList.remove('hide');
     toast.classList.add('show');
     setTimeout(function() {
